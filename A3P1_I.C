@@ -1,7 +1,7 @@
 /*
 This program can print (1 2 6 15 31 ..... n) using for loop
 Date: 21st Aug 2025
-Author: Adityasinh Sodha
+Author: prince chovatiya 
 */
 #include<stdio.h>
 #include<conio.h>
@@ -21,4 +21,5 @@ void main()
 
 
     getch();
+
 }
