@@ -1,24 +1,27 @@
-#include<stdio.h>
-#include<conio.h>
+#include <stdio.h>
+#include <conio.h>
+
 void main()
 {
-	int i,n,y=1,diff=1;
-	clrscr();
-	printf("enter number :");
-	scanf("%d",&n);
-	i=n;
+    int n, i = 1, y = 1, last;
 
-	for(i=n;i>=1;i--)
-	{
-		y=y+diff;
-		diff++;
-	}
-	for(i=n;i>=1;i--)
-	{
-		printf("\n%d",y);
-		y=y-(i-1);
-	}
+    clrscr();
+    printf("Enter last term value: ");
+    scanf("%d", &n);
 
+    while (i < n) 
+    {
+        i = i + y;
+        y++;
+    }
 
-	getch();
+    last = i; 
+    while (y > 0)
+     {
+        printf("\n%d", last);
+        last = last - (y - 1);
+        y--;
+    }
+
+    getch();
 }
